@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+
+<classPathEntry location="c:/Users/kaylee/.m2/repository/org/springframework/spring-jdbc/4.0.5.RELEASE/spring-jdbc-4.0.5.RELEASE.jar"/>
+<classPathEntry location="C:\Users\kaylee\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar"/>
+
+  <context id="context1" >
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://192.168.0.55:3306/ezcoin" userId="bsteam" password="bsteam" />
+    <javaModelGenerator targetPackage="com.ints.common.model" targetProject="ezCoin" />
+    <sqlMapGenerator targetPackage="com.ints.common.xml" targetProject="ezCoin" />
+    <javaClientGenerator targetPackage="com.ints.common.dao" targetProject="ezCoin" type="XMLMAPPER" />
+    <table schema="ezcoin" tableName="TA_ADMIN_MNG" />
+    <table schema="ezcoin" tableName="TA_ASK_MNG" />
+    <table schema="ezcoin" tableName="TA_BOARD_REPLY" />
+    <table schema="ezcoin" tableName="TA_FAQ_MNG" />
+    <table schema="ezcoin" tableName="TA_NOTICE_MNG" />
+    <table schema="ezcoin" tableName="TA_POPUP_MNG" />
+    <table schema="ezcoin" tableName="TA_MEMBER" />
+    <table schema="ezcoin" tableName="TA_MEMBER_WALLET" />   
+    <table schema="ezcoin" tableName="TA_REALBTC" />
+    <table schema="ezcoin" tableName="TA_KRW_REQUEST" />  
+    <table schema="ezcoin" tableName="TA_WON_REQUEST" />      
+  </context>
+</generatorConfiguration>
